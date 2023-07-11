@@ -1,0 +1,17 @@
+.container {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    
+
+}
+
+.contact-menu-grid {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
+.about-section {
+
+}
