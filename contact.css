@@ -1,0 +1,107 @@
+body {
+    max-width: auto;
+    display: grid;
+    grid-template-areas:
+    "h1"
+    "form";
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
+    color:rgb(222, 238, 252);
+    font-family: monospace;
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+    background-size: cover;
+
+}
+
+/* fieldset area */
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+    background-color:  rgb(88, 143, 108); 
+}
+
+/* Labels */
+label {
+    display:block;
+    margin-top: 1em;
+}
+.checks label {
+    margin-top: 1em;
+}
+
+label:first-of-type {
+    argin-top: 0;
+}
+
+/* Inputs and textarea */
+input {
+    padding: .5em;
+    border: solid 1px #999;
+}
+input[type="email"], input[type="text"] {
+    width: 15em;
+}
+textarea {
+    min-height: 8em;
+    min-width: 100%;
+    padding: .5em;
+    border: solid 1px #999;
+}
+
+/* Radio buttons and checkboxes */
+.checks {
+    margin-bottom: 1em;
+}
+.checks p {
+    margin-bottom: 0;
+}
+input[type="checkbox"] + label, input[type="radio"] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+/* Submit and Reset Button*/
+input[type="submit"], input[type="reset"] {
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: yellow;
+    color: #fff;
+    font-family: monospace;
+    font-size: .8em;
+}
+
+
+form {
+    
+    text-align: ;
+    border: red 2px;
+
+}
+.div {
+
+}
+h1 {
+    grid-area: h1;
+    font-size: 75px;
+    font-family: monospace;
+    text-align: center;
+    color:rgb(45, 79, 55)
+}
+
+/* Large screen rules*/
+@media screen and (min-width: 430px) {
+    fieldset {
+        width: 40%;
+        min-width: 320px;
+        margin: auto;
+    }
+    .checks label {
+        display: inline-block;
+        padding-top: .5em;
+        margin-top: 0;
+        margin-right: .5em;
+    }
+}
