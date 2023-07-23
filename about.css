@@ -1,0 +1,118 @@
+body {
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png);
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: 
+    "img" 
+    "header"
+    "about";
+    column-gap: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 50px;
+    grid-area: header;
+    grid-column: 2;
+    grid-row: 1;
+    color:rgb(39, 80, 61);
+}
+.img {
+    grid-area: img;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.about {
+    padding: 10px;
+    grid-area: about;
+    grid-column: 2;
+    grid-row: 2;
+    border: 2px solid;
+    border-radius: 6px;
+    margin-bottom: 5rem;
+    max-width: 450px;
+    background-color: rgb(88, 143, 108);
+    color:rgb(222, 238, 252);
+    font-family: 'Courier New', Courier, monospace;
+    
+
+}
+#about-pic {
+    border-radius: 6px;
+    /*height: 600px;
+    width: 450px;*/
+}
+.responsive {
+    max-width: 450px;
+    max-height: 600px;
+    width:100%;
+    height:auto;
+
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        max-width: auto;
+        margin: auto;
+    }
+    #about-pic {
+        min-width: none;
+        max-width: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-size: 1200px 1200px;
+    }
+
+    .about {
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and  (max-width: 400px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 30% 60%;
+        grid-template-areas: 
+        "header"
+        "img"
+        "about";
+        grid-gap: 2rem;
+    }
+    .header {
+        grid-area: header;
+        grid-row: 1;
+    }
+    .about {
+        margin-top: 40px;
+        grid-area: about;
+        grid-row: 3;
+    }
+    .img {
+        padding-left: 80px;
+        align-items: center;
+        justify-content: center
+        grid-area img;
+        grid-row: 2;
+        width: 200px;
+        height: 350px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    
+}
+
